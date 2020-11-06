@@ -30,10 +30,11 @@ function getNews(topic){
           console.log(technews);
           let techData = technews.articles;
           let output = "";
-          //iterates through the articles and returns necessary information
+          //loop that iterates through the articles and returns necessary information
           for (let tech of techData) {
+            // all the information that we need to gather from the articles
             output += `
-                
+
                   <h1 class="h1Title"><a href="${tech.url}" target=_blank>${tech.title}</a></h1>
                   <p>${tech.description}</p>
                   <img src="${tech.urlToImage}" />
@@ -43,6 +44,7 @@ function getNews(topic){
 
           document.getElementById("right").innerHTML = output;
         })
+        //catches errors
         .catch(err => console.log(err));
     })
     .catch(err => console.log(err));

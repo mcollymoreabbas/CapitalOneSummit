@@ -15,11 +15,13 @@
         <nav id = "searchheader" class = "navbar-light">
             <div id = "searchbar" class = "nav-link d-flex justify-content-around">
                 <h1>Today's Top Headlines</h1>
+                <!-- search doesn't work properly -->
                 <form id="searchform">
                     <input id = "search" type = "text" placeholder = "search for articles..." class="form-control mt-4"/>
                 </form>
             </div>
         </nav>
+        <!-- columns are collapsible -->
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-4" id="leftBlock">
@@ -42,6 +44,7 @@
             </div>
           </div>
         </div>
+        <!-- had to put the javascript at the end to avoid an error about information being null-->
         <script src="script.js"></script>
     </body>
 </html>
